@@ -6,7 +6,7 @@ div {
     height: 400px;
     width: 500px;
     background-color: rgba(255, 99, 71, 0);
-    color: whitesmoke
+    color: whitesmoke;
 }
 
 .image { 
@@ -18,5 +18,6 @@ div {
     position: absolute; 
     top: 20px; 
     left: 10px; 
-    width: 100%; 
+    width: 200px; 
+    overflow: wrap;
  }
