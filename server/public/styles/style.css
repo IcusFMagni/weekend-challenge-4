@@ -1,0 +1,22 @@
+IMG {
+    height: 400px;
+}
+
+div {
+    height: 400px;
+    width: 500px;
+    background-color: rgba(255, 99, 71, 0);
+    color: whitesmoke
+}
+
+.image { 
+    position: relative; 
+    width: 100%; /* for IE 6 */
+ }
+ 
+ p { 
+    position: absolute; 
+    top: 20px; 
+    left: 10px; 
+    width: 100%; 
+ }
