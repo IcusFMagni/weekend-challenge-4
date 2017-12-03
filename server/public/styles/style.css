@@ -1,5 +1,8 @@
 .imag {
     position: relative; 
+    border-style: ridge;
+    border-width: 40px;
+    border-color: rgb(121, 133, 145);
     /* width: 100%; for IE 6 */
 
  }
