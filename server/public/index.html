@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="GalleryApp">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,10 +13,43 @@
 
     <title>Gallery</title>
 </head>
+
 <body ng-controller="ImageController as vm">
-{{1+1}}
-<div class="image" class="col-md-5" ng-repeat="pic in vm.imageArray">
-    <img ng-click="pic.showDescription = !pic.showDescription" ng-src="{{'images/image' + pic.number + '.jpg'}}" ></img>
-    <p ng-show="pic.showDescription">{{pic.description}}</p>
-</div>
+    <h1>I don't know</h1>
+    <h2>|
+        <br>|
+        <br>V</h2>
+    {{1+1}}
+    <div class="row">
+        <div ng-repeat="pic in vm.imageArray1" class="col-md-4" class="container">
+            <div class="imag">
+                <img ng-click="pic.showDescription = !pic.showDescription" ng-src="{{'images/image' + pic.number + '.jpg'}}"></img>
+                <p ng-show="pic.showDescription">{{pic.description}}</p>
+                <button ng-click="vm.likePic(pic)">Likes {{pic.like}}</button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div ng-repeat="pic in vm.imageArray2" class="col-md-4" class="container">
+            <div class="imag">
+                <img ng-click="pic.showDescription = !pic.showDescription" ng-src="{{'images/image' + pic.number + '.jpg'}}"></img>
+                <p ng-show="pic.showDescription">{{pic.description}}</p>
+                <button ng-click="vm.likePic(pic)">Likes {{pic.like}}</button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div ng-repeat="pic in vm.imageArray3" class="col-md-4" class="container">
+            <div class="imag">
+                <img ng-click="pic.showDescription = !pic.showDescription" ng-src="{{'images/image' + pic.number + '.jpg'}}"></img>
+                <p ng-show="pic.showDescription">{{pic.description}}</p>
+                <button ng-click="vm.likePic(pic)">Likes {{pic.like}}</button>
+            </div>
+        </div>
+    </div>
+
+
+    <h3>I don't know</h3>
+
+
 </body>
